@@ -16,6 +16,8 @@ fi
 
 
 function export_cookie() {
+# Path for snap $HOME/snap/firefox/common/.mozilla/firefox/*.default/cookies.sqlite
+# C'est la meeeerde !
 reponse="$(sqlite3 $HOME/.mozilla/firefox/*.default-release/cookies.sqlite <<EOF
 SELECT value FROM moz_cookies WHERE host="www.udemy.com" and name LIKE "%%access_token%%";
 EOF
