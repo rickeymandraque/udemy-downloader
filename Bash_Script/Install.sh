@@ -2,6 +2,7 @@
 
 # DO NOT USE FOR NOW ! Warning Not tested ! This script is for my personal configuration. Warning Not tested ! DO NOT USE FOR NOW !
 
+echo "! Warning ! This script will not help you get the decryption keys. ! Warning !"
 echo "Warning Not tested ! This script is for my personal configuration. DO NOT USE ! USE CTL+C"
 echo "NOT WORKING FOR NOW !"
 
