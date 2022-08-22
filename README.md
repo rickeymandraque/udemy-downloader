@@ -1,4 +1,4 @@
-# Udemy Downloader with DRM support
+# Udemy Downloader with DRM support For Windows
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)](https://forthebadge.com)
