@@ -1,7 +1,9 @@
 #! /bin/bash
 
-# clear
 
+
+echo "! WARNING ! NOT WORK FOR NOW ! WARNING !"
+exit 1
 
 Get_Locale="$(locale | grep -E '^LANG=' | awk -F= '{print $2}'| awk -F. '{print $1}')"
 Minus_Locale="$(echo $Get_Locale | awk -F_ '{print $1}')"
