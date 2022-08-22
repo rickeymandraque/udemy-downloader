@@ -19,7 +19,7 @@ function mkcd() {
 mkcd $Download_Dir
 
 
-sudo -E gpg --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa-keyring.gpg --keyserver keyserver.ubuntu.com --recv-keys 08633B4AAAEB49FC
+sudo -E gpg --lock-never --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa-keyring.gpg --keyserver keyserver.ubuntu.com --recv-keys 08633B4AAAEB49FC
 sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list <<< "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
 
 sudo apt update && sudo apt -s upgrade
@@ -31,7 +31,7 @@ sudo pip install cloudscraper
 # wget -O $Shaka_Pakager
 # sudo mv ./packager-linux /usr/bin/shaka-pakager
 # sudo chmod 755 /usr/bin/shaka-pakager
-wget -q --spider $UDL_Sources
-wget -q --spider $Shaka_Pakager
+wget --spider $UDL_Sources
+wget --spider $Shaka_Pakager
 
 
