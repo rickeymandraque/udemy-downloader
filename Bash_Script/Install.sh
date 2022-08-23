@@ -23,16 +23,17 @@ gpgconf --kill dirmngr
 sudo -E gpg --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa-keyring.gpg --keyserver keyserver.ubuntu.com --recv-keys 08633B4AAAEB49FC
 sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list <<< "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
 
-sudo apt update && sudo apt -s upgrade
-sudo apt -s install python3-pip python3-mpegdash python3-tqdm python3-requests python3-dotenv python3-protobuf python3-webvtt python3-pysrt python3-m3u8 python3-colorama python3-bitstring python3-unidecode python3-bs4 python3-lxml python3-six python3-pathvalidate python3-coloredlogs python3-xmltodict discord yarn youtube-dl yt-dlp python3 build-essential wget curl aria2 libssl-dev gcc automake screen zlib1g-dev libjpeg-dev vlc celluloid ffmpeg p7zip-rar catfish p7zip-full fonts-crosextra-carlito fonts-crosextra-caladea gdebi
+sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install debian-keyring ffmpeg-doc python3-pip python3-mpegdash python3-tqdm python3-requests python3-dotenv python3-protobuf python3-webvtt python3-pysrt python3-m3u8 python3-colorama python3-bitstring python3-unidecode python3-bs4 python3-lxml python3-six python3-pathvalidate python3-coloredlogs python3-xmltodict discord yarn youtube-dl yt-dlp python3 build-essential wget curl aria2 libssl-dev gcc automake screen zlib1g-dev libjpeg-dev vlc celluloid ffmpeg p7zip-rar catfish p7zip-full fonts-crosextra-carlito fonts-crosextra-caladea git gdebi
 sudo pip install cloudscraper
 
 
-# wget -O Udemy-Downloader.zip $UDL_Sources
-# wget -O $Shaka_Pakager
-# sudo mv ./packager-linux /usr/bin/shaka-pakager
-# sudo chmod 755 /usr/bin/shaka-pakager
-wget --spider $UDL_Sources
-wget --spider $Shaka_Pakager
+wget -O Udemy-Downloader.zip $UDL_Sources
+wget -O $Shaka_Pakager
+sudo mv ./packager-linux /usr/bin/shaka-pakager
+sudo chmod 755 /usr/bin/shaka-pakager
+# wget --spider $UDL_Sources
+# wget --spider $Shaka_Pakager
 
 
