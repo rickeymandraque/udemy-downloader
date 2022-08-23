@@ -34,7 +34,7 @@ sudo pip install cloudscraper
 wget -O Udemy-Downloader.zip $UDL_Sources
 wget $Shaka_Pakager
 sudo mv ./packager-linux /usr/bin/shaka-packager
-sudo chmod 755 /usr/bin/shaka-pakager
+sudo chmod 755 /usr/bin/shaka-packager
 # wget --spider $UDL_Sources
 # wget --spider $Shaka_Pakager
 
