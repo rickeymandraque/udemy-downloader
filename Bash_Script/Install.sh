@@ -25,7 +25,7 @@ sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list <<< "deb [arch=amd64 sig
 
 sudo apt update && sudo apt upgrade -y
 sudo apt update && sudo apt dist-upgrade -y
-sudo apt install debian-keyring ffmpeg-doc python3-pip python3-mpegdash python3-tqdm python3-requests python3-dotenv python3-protobuf python3-webvtt python3-pysrt python3-m3u8 python3-colorama python3-bitstring python3-unidecode python3-bs4 python3-lxml python3-six python3-pathvalidate python3-coloredlogs python3-xmltodict discord yarn youtube-dl yt-dlp python3 build-essential wget curl aria2 libssl-dev gcc automake screen zlib1g-dev libjpeg-dev vlc celluloid ffmpeg p7zip-rar catfish p7zip-full fonts-crosextra-carlito fonts-crosextra-caladea git gdebi
+sudo apt install -y debian-keyring ffmpeg-doc python3-pip python3-mpegdash python3-tqdm python3-requests python3-dotenv python3-protobuf python3-webvtt python3-pysrt python3-m3u8 python3-colorama python3-bitstring python3-unidecode python3-bs4 python3-lxml python3-six python3-pathvalidate python3-coloredlogs python3-xmltodict discord yarn youtube-dl yt-dlp python3 build-essential wget curl aria2 libssl-dev gcc automake screen zlib1g-dev libjpeg-dev vlc celluloid ffmpeg p7zip-rar catfish p7zip-full fonts-crosextra-carlito fonts-crosextra-caladea git gdebi
 sudo pip install cloudscraper
 
 
