@@ -6,6 +6,7 @@ echo "This script not work yet"
 Get-Locale="$(locale | grep -E '^LANG=' | awk -F= '{print $2}'| awk -F. '{print $1}')"
 Minus_Local="$(Get-Local | awk -F_ '{print $1}')"
 Up_Local="$(Get-Local | awk -F_ '{print $2}')"
+Bearer="$HOME/.config/Udemy-Downloader/bearer.txt"
 
 
 if [[ $Minus_Locale = "fr" ]]; then
@@ -39,4 +40,4 @@ echo $reponse
 # French is fr; english us is en-US ...
 # need list of local (apt-cache output > list.lst ? )
 
-export_cookie
+export_cookie > $Bearer
