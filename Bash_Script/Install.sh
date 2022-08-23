@@ -9,7 +9,7 @@ echo "NOT WORKING FOR NOW !"
 sleep 5s
 
 Download_Dir="$HOME/.UDL_Installer"
-Shaka_Pakager="https://github.com/truedread/shaka-packager/releases/download/v2.5.3/packager-linux"
+Shaka_Packager="https://github.com/truedread/shaka-packager/releases/download/v2.5.3/packager-linux"
 UDL_Sources="https://github.com/rickeymandraque/udemy-downloader/archive/refs/heads/master.zip"
 
 function mkcd() {
@@ -32,7 +32,7 @@ sudo pip install cloudscraper
 
 
 wget -O Udemy-Downloader.zip $UDL_Sources
-wget $Shaka_Pakager
+wget $Shaka_Packager
 sudo mv ./packager-linux /usr/bin/shaka-packager
 sudo chmod 755 /usr/bin/shaka-packager
 # wget --spider $UDL_Sources
